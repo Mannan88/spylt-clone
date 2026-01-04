@@ -72,6 +72,10 @@ const Hero = () => {
                 className="absolute bottom-40 size-full object-cover"
               />
             )}
+             <img
+                src="/images/hero-bg.png"
+                className="absolute bottom-0 left-0 size-full object-cover"
+              />
             <img
               src="/images/hero-img.png"
               className="absolute bottom-0 left-1/2 -translate-x-1/2 object-auto"

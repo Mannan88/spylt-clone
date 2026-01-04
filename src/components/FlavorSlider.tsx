@@ -42,12 +42,13 @@ const FlavorSlider = () => {
     const titleTl = gsap.timeline({
       scrollTrigger: {
         trigger: ".flavor-section",
-        start: "top top",
-        end: "bottom 80%",
+        start: "top 20%",
+        end: "bottom center",
         scrub: true,
       },
     });
 
+     if(!isTablet){
     titleTl
       .to(".first-text-split", {
         xPercent: -30,
@@ -68,7 +69,7 @@ const FlavorSlider = () => {
           ease: "power1.inOut",
         },
         "<"
-      );
+      );}
   });
 
   return (
@@ -77,7 +78,7 @@ const FlavorSlider = () => {
         {flavorlists.map((flavor: Flavor) => (
           <div
             key={flavor.name}
-            className={`relative z-30 lg:w-[50vw] w-96 lg:h-[70vh] md:w-[90vw] md:h-[50vh] h-80 flex-none ${flavor.rotation}`}
+            className={`relative z-30 lg:w-[50vw] w-96 lg:h-[70vh] md:w-[80vw] md:h-[50vh] h-80 flex-none ${flavor.rotation}`}
           >
             <img
               src={`/images/svg/${flavor.color}-bg.svg`}

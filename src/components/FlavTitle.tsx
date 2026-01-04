@@ -57,7 +57,7 @@ const FlavTitle = () => {
       <div style={{
       clipPath:"polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)"
       }} className="flavor-text-scroll ">
-        <div className="bg-mid-brown px-3 pb-2">
+        <div className="bg-mid-brown px-3 pt-2 pb-4">
             <h2 className=" text-milk">
                 Freaking
             </h2>
