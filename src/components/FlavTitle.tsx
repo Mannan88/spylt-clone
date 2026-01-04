@@ -32,7 +32,7 @@ const FlavTitle = () => {
         scrollTrigger:{
           trigger:".flavor-section",
           start:"top 10%",
-          markers:true,
+          
         }
     })
 

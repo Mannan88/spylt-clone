@@ -4,14 +4,22 @@ import gsap from "gsap";
 import { useRef } from "react";
 import { useMediaQuery } from "react-responsive";
 
+interface Flavor {
+  name: string;
+  color: string;
+  rotation: string;
+}
+
 const FlavorSlider = () => {
-  const sliderRef = useRef();
+  const sliderRef = useRef<HTMLDivElement | null>(null);
 
   const isTablet = useMediaQuery({
     query: "(max-width: 1024px)",
   });
 
   useGSAP(() => {
+    if (!sliderRef.current) return;
+
     const scrollAmount = sliderRef.current.scrollWidth - window.innerWidth;
 
     if (!isTablet) {
@@ -66,7 +74,7 @@ const FlavorSlider = () => {
   return (
     <div ref={sliderRef} className="slider-wrapper">
       <div className="flavors">
-        {flavorlists.map((flavor) => (
+        {flavorlists.map((flavor: Flavor) => (
           <div
             key={flavor.name}
             className={`relative z-30 lg:w-[50vw] w-96 lg:h-[70vh] md:w-[90vw] md:h-[50vh] h-80 flex-none ${flavor.rotation}`}

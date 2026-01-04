@@ -24,7 +24,7 @@ const MessageSection = () => {
                 start: "top center",
                 end:"40% center",
                 scrub:true,
-                markers: false,
+              
             }
         })
           gsap.to(secMsgSplit.words, {
@@ -36,7 +36,7 @@ const MessageSection = () => {
                 start: "top center",
                 end:"bottom center",
                 scrub:true,
-                markers: false,
+               
             }
         })
         const revealTl = gsap.timeline({
@@ -44,7 +44,7 @@ const MessageSection = () => {
             scrollTrigger:{
                 trigger:".msg-text-scroll",
                 start:"top 60%",
-                markers:false,
+               
             },
         })
 
@@ -58,7 +58,6 @@ const MessageSection = () => {
             scrollTrigger:{
                 trigger:".message-content p",
                 start:"top center",
-                markers:true,
             }
         })
         paragraphTl.from(paraMsgSplit.words, {

@@ -1,4 +1,4 @@
-import FlavourSlider from "../components/FlavourSlider"
+import FlavorSlider from "../components/FlavorSlider"
 import FlavTitle from "../components/FlavTitle"
 
 const FlavourSection = () => {
@@ -10,7 +10,7 @@ const FlavourSection = () => {
                 <FlavTitle/>
             </div>
             <div className="h-full ">
-                <FlavourSlider/>
+                <FlavorSlider/>
             </div>
         </div>
     </section>
