@@ -106,7 +106,7 @@ const NutritionSection = () => {
           <div className="list-wrapper">
             {lists.map((nutrient:{
                 label:string,
-                amount:number
+                amount:string,
             }, index:number) => (
               <div key={index} className="relative flex-1 col-center leading ">
                 <div>
