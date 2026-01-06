@@ -68,7 +68,7 @@ if(!isMobile){
 
     return (
         <section className="testimonials-section">
-            <div className="absolute size-full flex flex-col items-center sm:pt-[5vw] pt-20">
+            <div className="absolute size-full flex flex-col items-center pt-20">
                 <h1 className="text-black first-title">What's</h1>
                 <h1 className="text-light-brown second-title">Everyone</h1>
                 <h1 className="text-black third-title">Talking</h1>
