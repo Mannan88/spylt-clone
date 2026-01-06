@@ -34,18 +34,18 @@ if(!isMobile){
                 }}
                 className="size-full video-box">
                 <video
-                    src="/videos/pin-video.mp4"
+                    src="videos/pin-video.mp4"
                     playsInline
                     muted
                     autoPlay
                     loop
                 />
                 <div className="abs-center md:scale-100 scale-200">
-                    <img src="/images/svg/circle-text.svg"
+                    <img src="images/svg/circle-text.svg"
                         className="spin-circle"
                     />
                     <div className="play-btn">
-                        <img src="/images/svg/play.svg" alt="play button"
+                        <img src="images/svg/play.svg" alt="play button"
                             className="size-[3vw] ml-[.5vw]" />
                     </div>
                 </div>
