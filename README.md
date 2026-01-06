@@ -1,5 +1,3 @@
-Here’s a modified version of your README that incorporates your project definition clearly while keeping the technical details intact:
-
 ---
 
 # SPYLT Homepage Clone – React + TypeScript + Vite  
@@ -107,5 +105,3 @@ The main objective of this project is to:
 - Learn **linting best practices** for scalable projects  
 
 ---
-
-Would you like me to also add a **setup & run section** (installation commands, dev server instructions, etc.) so the README feels complete and ready for GitHub?
