@@ -42,12 +42,12 @@ const NutritionSection = () => {
         ease: "power2.out",
       })
       .from(paragraphSplit.words, {
-        yPercent: 300,
+        yPercent: 200,
         rotate: 3,
         ease: "power1.inOut",
         duration: 1,
         stagger: 0.01,
-      });
+      },"<");
 
     const titleTl = gsap.timeline({
       scrollTrigger: {
@@ -69,13 +69,13 @@ const NutritionSection = () => {
       <img
         src="/images/slider-dip.png"
         alt=""
-        className="w-full object-cover"
+        className="w-full object-cover -z-"
       />
 
-      <img src="/images/big-img.png" alt="" className="big-img" />
+      <img src="/images/big-img.png" alt="" className="big-img " />
 
-      <div className="flex md:flex-row flex-col justify-between   mt-14 md:mt-0">
-        <div className="relative inline-block md:translate-y-20">
+      <div className="flex md:flex-row flex-col justify-between mt-14 md:mt-0 ">
+        <div className="relative inline-block ">
           <div className="general-title relative flex flex-col justify-center items-center gap-24 md:px-10 px-5">
             <div className="overflow-hidden place-self-start">
               <h1 className="nutrition-title">It still does</h1>
@@ -108,11 +108,11 @@ const NutritionSection = () => {
                 label:string,
                 amount:number
             }, index:number) => (
-              <div key={index} className="relative flex-1 col-center ">
+              <div key={index} className="relative flex-1 col-center leading ">
                 <div>
                   <p className="md:text-lg  font-paragraph">{nutrient.label}</p>
                   <p className="font-paragraph text-sm mt-2">up to</p>
-                  <p className="text-2xl md:text-4xl tracking-tighter font-bold">
+                  <p className="text-2xl md:text-4xl tracking-tight  font-bold md:leading-[1.3em]  ">
                     {nutrient.amount}
                   </p>
                 </div>

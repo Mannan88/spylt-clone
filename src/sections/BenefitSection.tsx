@@ -2,8 +2,12 @@ import { useGSAP } from "@gsap/react"
 import ClipPathTitle from "../components/ClipPathTitle"
 import gsap from "gsap"
 import VideoPin from "../components/VideoPin"
+import { useMediaQuery } from "react-responsive"
 
 const BenefitSection = () => {
+      const isMobile = useMediaQuery({
+    query: "(max-width: 768px)",
+  });
     useGSAP(()=>{
         const tl = gsap.timeline({
         delay:1,
@@ -12,7 +16,6 @@ const BenefitSection = () => {
             start:"top 60%",
             end: "top top",
             scrub:1.5,
-            markers:true,
         },
         });
 
@@ -87,9 +90,11 @@ const BenefitSection = () => {
           </div>
         </div>
        </div>
-       <div className="">
+
+     {!isMobile && ( <div className="">
         <VideoPin/>
-       </div>
+       </div>)}
+      
     </section>
   )
 }

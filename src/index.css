@@ -163,7 +163,7 @@ body::-webkit-scrollbar {
     @apply min-h-dvh 2xl:h-[120dvh] overflow-hidden relative;
 
     .big-img {
-      @apply w-full absolute 2xl:h-full md:h-2/3 h-1/2 left-0 bottom-0 object-bottom 2xl:object-contain object-cover;
+      @apply w-full scale-180 absolute md:h-[full] left-0 md:-bottom-10 bottom-10 object-bottom 2xl:object-contain object-cover;
     }
 
     .nutrition-title {
@@ -171,14 +171,14 @@ body::-webkit-scrollbar {
     }
 
     .nutrition-text-scroll {
-      @apply rotate-[-3deg] border-[.5vw] border-[#e3d3bc] text-nowrap opacity-0 md:-mt-32 -mt-24;
+      @apply -rotate-3 border-8 border-[#e3d3bc] text-nowrap opacity-0 md:-mt-35 -mt-24;
     }
 
     .nutrition-box {
       @apply absolute md:bottom-16 bottom-5  w-full md:px-4 px-5 ;
 
       .list-wrapper {
-        @apply bg-[#fdebd2] rounded-full border-[.5vw] border-[#e8ddca] mx-auto max-w-7xl md:py-8 py-5 md:px-0 px-5 flex justify-between items-center;
+        @apply bg-[#fdebd2] rounded-full md:border-8 border-4  border-[#e8ddca] mx-auto max-w-7xl md:py-4 py-3 md:px-0 px-5 flex justify-between items-center  md:leading-1.5;
 
         p {
           @apply text-[#865720];
@@ -235,15 +235,15 @@ body::-webkit-scrollbar {
     @apply bg-milk relative w-full h-[120dvh];
 
     .pin-box {
-      @apply flex items-center justify-center w-full ps-52 absolute 2xl:bottom-32 bottom-[50vh];
+      @apply flex items-center h-[80dvh]  justify-center w-full ps-48 absolute  2xl:bottom-32 md:bottom-30 bottom-10;
 
       .vd-card {
-        @apply md:w-96 w-80 flex-none md:rounded-[2vw] rounded-3xl -ms-44 overflow-hidden 2xl:relative absolute border-[.5vw] border-milk;
+        @apply md:w-86 sm:w-68 w-60 flex-none md:rounded-[2vw] rounded-3xl -ms-44 overflow-hidden lg:relative absolute border-8 border-milk;
       }
     }
 
     h1 {
-      @apply uppercase text-[20.5vw] leading-[105%] tracking-[-.4vw] ml-[2vw] font-bold;
+      @apply uppercase text-[14.5vw] leading-[105%] tracking-[-.4vw] ml-[2vw] font-bold;
     }
   }
 
